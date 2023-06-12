@@ -20,7 +20,7 @@ const getById = async (req,res,next)=>{
     try {
         book = await Book.findById(id)
     } catch (err) {
-        consolde.log(err)
+        console.log(err)
     }
     if (!book){
         return res.status(404).json({message:"No book found"})
