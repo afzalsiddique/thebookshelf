@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import AddBook from "./components/AddBook";
 import Books from "./components/Book/Books";
+import BookDetail from "./components/Book/BookDetail";
 import About from "./components/About";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                   <Route path="/add" element={<AddBook />} exact />
                   <Route path="/books" element={<Books />} exact />
                   <Route path="/About" element={<About />} exact />
+                  <Route path="/books/:id" element={<BookDetail />} exact />
               </Routes>
           </main>
       </React.Fragment>
